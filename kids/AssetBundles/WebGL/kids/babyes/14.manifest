@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3097792407
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d5e8d2a0ef30291944fbb5ee455d4589
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97dc3b082fc22fff3d4e573766ded33b
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afff41642377842029916357151ecdc1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/babyes/14/babyes0014.asset
+Dependencies: []

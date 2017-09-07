@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2295679325
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fe0d0cb92b8f0bbb9eded20bf2dddfb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/plants/10/plant_10_icon.png
+- Assets/PageConfigs/plants/14/plant_14_icon.png
+- Assets/PageConfigs/plants/7/plant_7_icon.png
+- Assets/PageConfigs/plants/5/plant_5_icon.png
+- Assets/PageConfigs/plants/12/plant_12_icon.png
+- Assets/PageConfigs/plants/13/plant_13_icon.png
+- Assets/PageConfigs/plants/8/plant_8_icon.png
+- Assets/PageConfigs/plants/2/plant_2_icon.png
+- Assets/PageConfigs/plants/1/plant_1_icon.png
+- Assets/PageConfigs/plants/6/plant_6_icon.png
+- Assets/PageConfigs/plants/3/plant_3_icon.png
+- Assets/PageConfigs/plants/9/plant_9_icon.png
+- Assets/PageConfigs/plants/11/plant_11_icon.png
+- Assets/PageConfigs/plants/4/plant_4_icon.png
+- Assets/PageConfigs/plants/15/plant_15_icon.png
+Dependencies: []

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Basic – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap">
+    <div class="panel">
+      <nav class="side">
+          <h3>BrushPack</h3>
+          <ul class="nav nav-stacked">
+            <li class="active">
+              <a href="/docs/0-brushpackbasic/">Basic</a>
+            <li>
+              <a href="/docs/1-brushpackadvanced/">Advanced</a>
+          </ul>
+          <h3>Pro</h3>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="/docs/10-pro3d/">3D Scene setup</a>
+            <li>
+              <a href="/docs/20-proSVG/">SVG support</a>
+          </ul>
+      </nav>
+      <section>
+          <div class="docs">
+          <h1 id="basic-tools">Basic tools</h1>
+<div class="toc">
+<ul>
+<li><a href="#basic-tools">Basic tools</a><ul>
+<li><a href="#pencil">Pencil</a></li>
+<li><a href="#brush">Brush</a></li>
+<li><a href="#crayon">Crayon</a></li>
+<li><a href="#eraser">Eraser</a></li>
+<li><a href="#ink">Ink</a></li>
+<li><a href="#spray">Spray</a></li>
+<li><a href="#bucket">Bucket</a></li>
+<li><a href="#magnifier">Magnifier</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Basic tools is a first version of tools provided by paintcraft
+These tools located at <em>PaintCraft/BrushPack/Basic</em> folder
+All of this tools are very efficient because they use own mesh pool. So it's better to use them.
+But if you want to make a complex line which use several materials you have to use <strong>Advanced</strong> tools.</p>
+<p>Common workflow of the tool is following
+<em> read user input
+</em> interpolate points
+* render swatches on each points</p>
+<p>Each tool is a scriptable object. And this object located inside tool folder. you can select this object and then open tool editor through <em>TopMenue-&gt;Window-&gt;PaintCraft (Brush Setup)</em></p>
+<h2 id="pencil">Pencil</h2>
+<p>You can see that pencil has opaque line with mask texture which make horizontal lines holes
+<img alt="eraser setup" src="/images/basic_tools/pencil.png" /></p>
+<h2 id="brush">Brush</h2>
+<p>Brush is a basic tool which place transparent swatches along the path
+<img alt="eraser setup" src="/images/basic_tools/brush.png" /></p>
+<h2 id="crayon">Crayon</h2>
+<p>This tool simulate crayon - the line has ragged edges and opaque
+<img alt="eraser setup" src="/images/basic_tools/crayon.png" /></p>
+<h2 id="eraser">Eraser</h2>
+<p>Eraser is simply just opaque brush which draw with background color on top of the drawing
+<img alt="eraser setup" src="/images/basic_tools/eraser.png" /></p>
+<h2 id="ink">Ink</h2>
+<p>Ink line thickness depends on how fast do you move your cursor or finger on touch device. As fast you move as thicker your line
+<img alt="eraser setup" src="/images/basic_tools/ink.png" /></p>
+<h2 id="spray">Spray</h2>
+<p>Spray place small points within small region. as more you hold your finger at the same point as more points you will receive.
+<img alt="eraser setup" src="/images/basic_tools/spray.png" /></p>
+<h2 id="bucket">Bucket</h2>
+<p>To make bucket works you need to use pageconfig which has region texture. after that just click in the region and it will be filled with selected color</p>
+<h2 id="magnifier">Magnifier</h2>
+<p>Magnifier has own button because coloring book support multitouch drawing. This means that you can use one or five fingers to draw different lines at once. and it's not possible in this case recognize do you want to draw or you want to pan or zoom canvas. This is why there is this tool.</p>
+          </div>
+      </section>
+    </div>
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

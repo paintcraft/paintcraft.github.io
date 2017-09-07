@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 4289755108
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ec156dc2f47bba8fd36e58997d22a142
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/winter/14/winter0014.icon.png
+- Assets/PageConfigsNew/winter/15/winter0015.icon.png
+- Assets/PageConfigsNew/winter/05/winter0005.icon.png
+- Assets/PageConfigsNew/winter/04/winter0004.icon.png
+- Assets/PageConfigsNew/winter/01/winter0001.icon.png
+- Assets/PageConfigsNew/winter/12/winter0012.icon.png
+- Assets/PageConfigsNew/winter/13/winter0013.icon.png
+- Assets/PageConfigsNew/winter/06/winter0006.icon.png
+- Assets/PageConfigsNew/winter/10/winter0010.icon.png
+- Assets/PageConfigsNew/winter/08/winter0008.icon.png
+- Assets/PageConfigsNew/winter/07/winter0007.icon.png
+- Assets/PageConfigsNew/winter/11/winter0011.icon.png
+- Assets/PageConfigsNew/winter/03/winter0003.icon.png
+- Assets/PageConfigsNew/winter/09/winter0009.icon.png
+- Assets/PageConfigsNew/winter/02/winter0002.icon.png
+Dependencies: []

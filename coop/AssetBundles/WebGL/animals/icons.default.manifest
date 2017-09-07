@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 828145372
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a4e408d304bab7311db24e705cdeccb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4d24bf54f46935ed9e6cf78ac481bb9d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/animals/1/animal_1_icon.png
+- Assets/PageConfigs/animals/3/animal_3_icon.png
+- Assets/PageConfigs/animals/2/animal_2_icon.png
+Dependencies: []

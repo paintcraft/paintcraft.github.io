@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2613941474
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 86915674e70303b0de8a00bbd06c8c61
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/animals/11/animal_11_icon.png
+- Assets/PageConfigs/animals/13/animal_13_icon.png
+- Assets/PageConfigs/animals/4/animal_4_icon.png
+- Assets/PageConfigs/animals/14/animal_14_icon.png
+- Assets/PageConfigs/animals/10/animal_10_icon.png
+- Assets/PageConfigs/animals/6/animal_6_icon.png
+- Assets/PageConfigs/animals/5/animal_5_icon.png
+- Assets/PageConfigs/animals/15/animal_15_icon.png
+- Assets/PageConfigs/animals/8/animal_8_icon.png
+- Assets/PageConfigs/animals/7/animal_7_icon.png
+- Assets/PageConfigs/animals/1/animal_1_icon.png
+- Assets/PageConfigs/animals/12/animal_12_icon.png
+- Assets/PageConfigs/animals/3/animal_3_icon.png
+- Assets/PageConfigs/animals/2/animal_2_icon.png
+- Assets/PageConfigs/animals/9/animal_9_icon.png
+Dependencies: []

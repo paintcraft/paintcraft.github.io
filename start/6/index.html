@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Coloring Page – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+class="active"      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Coloring Page</h1>
+    <p>Drawing on plane canvas it's cool but let me show you how to create a coloring page. where all you lines would be restricted to predefined regions. We would need to setup 3 image and i'll explain you where each of them is used for.</p>
+<h2 id="page-conifg">Page Conifg</h2>
+<p>First of all we need to create a new page config go to your <code>Configs</code> folder and create new page config file. but this time select <code>RightClickButton/Create/PaintCraft/ColoringPageConfig</code></p>
+<p><img alt="blank coloring page config" src="/images/quickstart/blank_coloring_page_config.png" /></p>
+<p>As usual you need to setup unique id property. and setup 3 image links.</p>
+<p>Here i should notice you that every image used as coloring page must be stored somwhere in <code>Resources</code> folder so it won't be loaded automaticaly to the memory and your app will works on any mobile device even if you will have on handreed pages. So let's create Resources folder first and one subfolder for our image <code>NewPage1</code></p>
+<h2 id="outlinelayer">OutlineLayer</h2>
+<p>In coloring page we use 2 layers. One layer is the same as on blank page where we draw our graphics. and 2 layer contains our actual image. On the screenshot below we hasn't drawn anything and our back layer is blank and white. Outline layer contain Bear image.</p>
+<p><img alt="layer positions" src="/images/quickstart/layer_positions.png" /></p>
+<p>And as you see Outline layer must have transparency. you could have any colors on it. something like shades color injections and so on.it's not mandatory to have black and white image.  You can open demo project pictures and see that it has some transparent shades.</p>
+<p><img alt="bird icon" src="/images/quickstart/bird_icon.png" /></p>
+<p>Then you need to fix import settings. By default unity could use power of 2 settings so your image would be stretched. to fix that select your outline image and then in inspector change <code>TextureType=Advanced</code> and then <code>Non Power of 2 = None</code> and also we don't need MipMaps so you could disable them as well. Here you could check what i have.</p>
+<p><img alt="outline import settings" src="/images/quickstart/outline_import_settings.png" /></p>
+<h2 id="icon">Icon</h2>
+<p>We need separated downscaled icon because of the following reason. When you make any changes on the canvas we store this state on the disk. so when your player would comeback it will be able to work with this image. And we do not store mix of the backgraound layer (where you draw) and outline layer and it's just a lines which you made. The stored layer is looks like this</p>
+<p><img alt="bear stored icon" src="/images/quickstart/bear_stored_icon.jpg" /></p>
+<p>And we need to blend this with outline layer. It won't work on older device if we will blend this with original outline layer. because each image would consume to much memory. and this is why we need to add downscaled image.</p>
+<p>It depends on you which size of image do you want to have. if you will open canvas controller you will see the settings for the icon size by default it <code>440x330</code></p>
+<p><img alt="preview icon size" src="/images/quickstart/preview_icon_size.png" /></p>
+<p>For import settings you could have the same import settings which you used for outline layer</p>
+<h2 id="predefined-regions">Predefined Regions</h2>
+<p>To make region texture what you need to do is just paint your texture in image editor. where every region has own unique color. And if you want to merge some regions you can assign the same color to it. For example you can make the same color for all grass on the image. or for all body parts so if player click on one region with bucket all body parts will be filled with the same region.</p>
+<p>Any <em>regions where alpha = 0 will be ignored</em> for painting. This means that if you don't want to allow user some regions just assign alpha = 0 to it.</p>
+<p>Finally you need to make proper setting for the texture. Critical part here is a <strong>FilterMode</strong> it must have <strong>"Point (no filter)"</strong> value</p>
+<p><img alt="region export parameters" src="/images/quickstart/region_export.png" /></p>
+<h2 id="final-config">Final config</h2>
+<p>At this point you should have all 3 images. let's setup links to them in our config file</p>
+<p><img alt="filled coloring page config" src="/images/quickstart/filled_page_config.png" /></p>
+<p>If your images would be stored not in Resource folder. this inspector will notify you about this. Also if you will change location of this images you would nedd to setup this link again. unity won't change lnks to them automatically as it does for scene or prefab objects.</p>
+<p>Now you could select this config in your <code>CanvasController</code> component. Also i'll change default background color to <code>White</code></p>
+<p><img alt="canvas controller with coloring page config" src="/images/quickstart/canvas_controller.png" /></p>
+<p>And now you could start your scene and start drawing your image</p>
+<p><img alt="drawing coloring page" src="/images/quickstart/drawing_coloring_page.png" /></p>
+
+    <div class="toolbar">
+        <a href="/start/5/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

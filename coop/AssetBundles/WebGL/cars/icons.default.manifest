@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1476676007
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b6c32a269ba97aeea2a4810fec656718
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4d24bf54f46935ed9e6cf78ac481bb9d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/cars/1/car_1_icon.png
+- Assets/PageConfigs/cars/2/car_2_icon.png
+- Assets/PageConfigs/cars/4/car_4_icon.png
+- Assets/PageConfigs/cars/3/car_3_icon.png
+Dependencies: []

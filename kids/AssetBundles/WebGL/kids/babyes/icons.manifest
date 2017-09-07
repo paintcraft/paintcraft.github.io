@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 3094009347
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 976ed29a214a09656aa7f35cf60c9597
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/babyes/38/babyes0038.icon.png
+- Assets/PageConfigsNew/babyes/28/babyes0028.icon.png
+- Assets/PageConfigsNew/babyes/35/babyes0035.icon.png
+- Assets/PageConfigsNew/babyes/26/babyes0026.icon.png
+- Assets/PageConfigsNew/babyes/06/babyes0006.icon.png
+- Assets/PageConfigsNew/babyes/10/babyes0010.icon.png
+- Assets/PageConfigsNew/babyes/27/babyes0027.icon.png
+- Assets/PageConfigsNew/babyes/07/babyes0007.icon.png
+- Assets/PageConfigsNew/babyes/36/babyes0036.icon.png
+- Assets/PageConfigsNew/babyes/20/babyes0020.icon.png
+- Assets/PageConfigsNew/babyes/05/babyes0005.icon.png
+- Assets/PageConfigsNew/babyes/40/babyes0040.icon.png
+- Assets/PageConfigsNew/babyes/04/babyes0004.icon.png
+- Assets/PageConfigsNew/babyes/23/babyes0023.icon.png
+- Assets/PageConfigsNew/babyes/12/babyes0012.icon.png
+- Assets/PageConfigsNew/babyes/33/babyes0033.icon.png
+- Assets/PageConfigsNew/babyes/39/babyes0039.icon.png
+- Assets/PageConfigsNew/babyes/37/babyes0037.icon.png
+- Assets/PageConfigsNew/babyes/15/babyes0015.icon.png
+- Assets/PageConfigsNew/babyes/29/babyes0029.icon.png
+- Assets/PageConfigsNew/babyes/32/babyes0032.icon.png
+- Assets/PageConfigsNew/babyes/24/babyes0024.icon.png
+- Assets/PageConfigsNew/babyes/34/babyes0034.icon.png
+- Assets/PageConfigsNew/babyes/09/babyes0009.icon.png
+- Assets/PageConfigsNew/babyes/02/babyes0002.icon.png
+- Assets/PageConfigsNew/babyes/18/babyes0018.icon.png
+- Assets/PageConfigsNew/babyes/19/babyes0019.icon.png
+- Assets/PageConfigsNew/babyes/30/babyes0030.icon.png
+- Assets/PageConfigsNew/babyes/22/babyes0022.icon.png
+- Assets/PageConfigsNew/babyes/13/babyes0013.icon.png
+- Assets/PageConfigsNew/babyes/25/babyes0025.icon.png
+- Assets/PageConfigsNew/babyes/31/babyes0031.icon.png
+- Assets/PageConfigsNew/babyes/16/babyes0016.icon.png
+- Assets/PageConfigsNew/babyes/14/babyes0014.icon.png
+- Assets/PageConfigsNew/babyes/03/babyes0003.icon.png
+- Assets/PageConfigsNew/babyes/11/babyes0011.icon.png
+- Assets/PageConfigsNew/babyes/21/babyes0021.icon.png
+- Assets/PageConfigsNew/babyes/17/babyes0017.icon.png
+- Assets/PageConfigsNew/babyes/08/babyes0008.icon.png
+- Assets/PageConfigsNew/babyes/01/babyes0001.icon.png
+Dependencies: []

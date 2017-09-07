@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "vk_kids.data.unityweb",
+"asmCodeUrl": "vk_kids.asm.code.unityweb",
+"asmMemoryUrl": "vk_kids.asm.memory.unityweb",
+"asmFrameworkUrl": "vk_kids.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

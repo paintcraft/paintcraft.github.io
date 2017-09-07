@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4101838089
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 76c41b44a93bebaa1df869dcbd4d26a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/tattoos/1/tattoo_1_icon.png
+- Assets/PageConfigs/tattoos/3/tattoo_3_icon.png
+- Assets/PageConfigs/tattoos/2/tattoo_2_icon.png
+Dependencies: []

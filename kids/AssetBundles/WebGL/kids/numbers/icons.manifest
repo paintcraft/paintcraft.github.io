@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3546845403
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 51e8a480ea815af403b4fdfd2aed23f0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/numbers/05/numbers0005.icon.png
+- Assets/PageConfigsNew/numbers/03/numbers0003.icon.png
+- Assets/PageConfigsNew/numbers/04/numbers0004.icon.png
+- Assets/PageConfigsNew/numbers/11/numbers0011.icon.png
+- Assets/PageConfigsNew/numbers/10/numbers0010.icon.png
+- Assets/PageConfigsNew/numbers/07/numbers0007.icon.png
+- Assets/PageConfigsNew/numbers/08/numbers0008.icon.png
+- Assets/PageConfigsNew/numbers/09/numbers0009.icon.png
+- Assets/PageConfigsNew/numbers/06/numbers0006.icon.png
+- Assets/PageConfigsNew/numbers/01/numbers0001.icon.png
+- Assets/PageConfigsNew/numbers/02/numbers0002.icon.png
+Dependencies: []

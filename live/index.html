@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+      <div class="wrap">
+    <div class="panel">      
+      <section>        
+          <div class="row" style="text-align: center">
+          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+            <script type='text/javascript'>
+            var Module = {
+              TOTAL_MEMORY: 268435456,
+              errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+              compatibilitycheck: null,
+              dataUrl: "/live/webgl/PaintCraft_WebGL.data",
+              codeUrl: "/live/webgl/PaintCraft_WebGL.js",
+              memUrl: "/live/webgl/PaintCraft_WebGL.mem",
+            };
+          </script>
+          <script src="/live/webgl/UnityLoader.js"></script>
+          </div>                
+      </section>
+    </div>
+  </div>
+
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

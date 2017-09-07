@@ -1,0 +1,361 @@
+ManifestFileVersion: 0
+CRC: 480382732
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: animals/icons
+      Dependencies: {}
+    Info_1:
+      Name: animals/1
+      Dependencies: {}
+    Info_2:
+      Name: animals/2
+      Dependencies: {}
+    Info_3:
+      Name: humans/icons
+      Dependencies: {}
+    Info_4:
+      Name: humans/1
+      Dependencies: {}
+    Info_5:
+      Name: humans/2
+      Dependencies: {}
+    Info_6:
+      Name: humans/3
+      Dependencies: {}
+    Info_7:
+      Name: humans/4
+      Dependencies: {}
+    Info_8:
+      Name: humans/5
+      Dependencies: {}
+    Info_9:
+      Name: humans/6
+      Dependencies: {}
+    Info_10:
+      Name: humans/7
+      Dependencies: {}
+    Info_11:
+      Name: humans/8
+      Dependencies: {}
+    Info_12:
+      Name: humans/9
+      Dependencies: {}
+    Info_13:
+      Name: cars/1
+      Dependencies: {}
+    Info_14:
+      Name: cars/2
+      Dependencies: {}
+    Info_15:
+      Name: cars/4
+      Dependencies: {}
+    Info_16:
+      Name: cars/icons
+      Dependencies: {}
+    Info_17:
+      Name: cars/3
+      Dependencies: {}
+    Info_18:
+      Name: abstract/icons
+      Dependencies: {}
+    Info_19:
+      Name: abstract/1
+      Dependencies: {}
+    Info_20:
+      Name: abstract/2
+      Dependencies: {}
+    Info_21:
+      Name: abstract/3
+      Dependencies: {}
+    Info_22:
+      Name: abstract/4
+      Dependencies: {}
+    Info_23:
+      Name: abstract/5
+      Dependencies: {}
+    Info_24:
+      Name: abstract/6
+      Dependencies: {}
+    Info_25:
+      Name: abstract/7
+      Dependencies: {}
+    Info_26:
+      Name: abstract/8
+      Dependencies: {}
+    Info_27:
+      Name: abstract/9
+      Dependencies: {}
+    Info_28:
+      Name: abstract/10
+      Dependencies: {}
+    Info_29:
+      Name: abstract/11
+      Dependencies: {}
+    Info_30:
+      Name: animals/4
+      Dependencies: {}
+    Info_31:
+      Name: animals/5
+      Dependencies: {}
+    Info_32:
+      Name: animals/6
+      Dependencies: {}
+    Info_33:
+      Name: animals/7
+      Dependencies: {}
+    Info_34:
+      Name: animals/8
+      Dependencies: {}
+    Info_35:
+      Name: animals/9
+      Dependencies: {}
+    Info_36:
+      Name: animals/10
+      Dependencies: {}
+    Info_37:
+      Name: cars/5
+      Dependencies: {}
+    Info_38:
+      Name: cars/6
+      Dependencies: {}
+    Info_39:
+      Name: patterns/icons
+      Dependencies: {}
+    Info_40:
+      Name: patterns/10
+      Dependencies: {}
+    Info_41:
+      Name: patterns/8
+      Dependencies: {}
+    Info_42:
+      Name: patterns/7
+      Dependencies: {}
+    Info_43:
+      Name: patterns/6
+      Dependencies: {}
+    Info_44:
+      Name: patterns/5
+      Dependencies: {}
+    Info_45:
+      Name: patterns/4
+      Dependencies: {}
+    Info_46:
+      Name: patterns/3
+      Dependencies: {}
+    Info_47:
+      Name: patterns/2
+      Dependencies: {}
+    Info_48:
+      Name: patterns/1
+      Dependencies: {}
+    Info_49:
+      Name: patterns/9
+      Dependencies: {}
+    Info_50:
+      Name: plants/icons
+      Dependencies: {}
+    Info_51:
+      Name: plants/1
+      Dependencies: {}
+    Info_52:
+      Name: plants/2
+      Dependencies: {}
+    Info_53:
+      Name: plants/3
+      Dependencies: {}
+    Info_54:
+      Name: plants/4
+      Dependencies: {}
+    Info_55:
+      Name: plants/5
+      Dependencies: {}
+    Info_56:
+      Name: plants/7
+      Dependencies: {}
+    Info_57:
+      Name: plants/8
+      Dependencies: {}
+    Info_58:
+      Name: plants/9
+      Dependencies: {}
+    Info_59:
+      Name: plants/6
+      Dependencies: {}
+    Info_60:
+      Name: tattoos/icons
+      Dependencies: {}
+    Info_61:
+      Name: tattoos/1
+      Dependencies: {}
+    Info_62:
+      Name: tattoos/2
+      Dependencies: {}
+    Info_63:
+      Name: tattoos/3
+      Dependencies: {}
+    Info_64:
+      Name: mandalas/icons
+      Dependencies: {}
+    Info_65:
+      Name: mandalas/1
+      Dependencies: {}
+    Info_66:
+      Name: mandalas/2
+      Dependencies: {}
+    Info_67:
+      Name: mandalas/3
+      Dependencies: {}
+    Info_68:
+      Name: mandalas/4
+      Dependencies: {}
+    Info_69:
+      Name: mandalas/5
+      Dependencies: {}
+    Info_70:
+      Name: mandalas/6
+      Dependencies: {}
+    Info_71:
+      Name: mandalas/7
+      Dependencies: {}
+    Info_72:
+      Name: mandalas/8
+      Dependencies: {}
+    Info_73:
+      Name: mandalas/9
+      Dependencies: {}
+    Info_74:
+      Name: mandalas/10
+      Dependencies: {}
+    Info_75:
+      Name: randoms/icons
+      Dependencies: {}
+    Info_76:
+      Name: randoms/1
+      Dependencies: {}
+    Info_77:
+      Name: randoms/2
+      Dependencies: {}
+    Info_78:
+      Name: randoms/3
+      Dependencies: {}
+    Info_79:
+      Name: randoms/4
+      Dependencies: {}
+    Info_80:
+      Name: randoms/5
+      Dependencies: {}
+    Info_81:
+      Name: randoms/6
+      Dependencies: {}
+    Info_82:
+      Name: randoms/7
+      Dependencies: {}
+    Info_83:
+      Name: randoms/8
+      Dependencies: {}
+    Info_84:
+      Name: randoms/9
+      Dependencies: {}
+    Info_85:
+      Name: randoms/10
+      Dependencies: {}
+    Info_86:
+      Name: abstract/12
+      Dependencies: {}
+    Info_87:
+      Name: abstract/13
+      Dependencies: {}
+    Info_88:
+      Name: abstract/14
+      Dependencies: {}
+    Info_89:
+      Name: abstract/15
+      Dependencies: {}
+    Info_90:
+      Name: animals/11
+      Dependencies: {}
+    Info_91:
+      Name: animals/12
+      Dependencies: {}
+    Info_92:
+      Name: animals/13
+      Dependencies: {}
+    Info_93:
+      Name: animals/14
+      Dependencies: {}
+    Info_94:
+      Name: animals/15
+      Dependencies: {}
+    Info_95:
+      Name: humans/10
+      Dependencies: {}
+    Info_96:
+      Name: humans/11
+      Dependencies: {}
+    Info_97:
+      Name: humans/12
+      Dependencies: {}
+    Info_98:
+      Name: humans/13
+      Dependencies: {}
+    Info_99:
+      Name: humans/14
+      Dependencies: {}
+    Info_100:
+      Name: humans/15
+      Dependencies: {}
+    Info_101:
+      Name: humans/16
+      Dependencies: {}
+    Info_102:
+      Name: mandalas/11
+      Dependencies: {}
+    Info_103:
+      Name: mandalas/12
+      Dependencies: {}
+    Info_104:
+      Name: mandalas/13
+      Dependencies: {}
+    Info_105:
+      Name: mandalas/14
+      Dependencies: {}
+    Info_106:
+      Name: mandalas/15
+      Dependencies: {}
+    Info_107:
+      Name: plants/10
+      Dependencies: {}
+    Info_108:
+      Name: plants/11
+      Dependencies: {}
+    Info_109:
+      Name: plants/12
+      Dependencies: {}
+    Info_110:
+      Name: plants/13
+      Dependencies: {}
+    Info_111:
+      Name: plants/14
+      Dependencies: {}
+    Info_112:
+      Name: plants/15
+      Dependencies: {}
+    Info_113:
+      Name: randoms/11
+      Dependencies: {}
+    Info_114:
+      Name: randoms/12
+      Dependencies: {}
+    Info_115:
+      Name: randoms/13
+      Dependencies: {}
+    Info_116:
+      Name: randoms/14
+      Dependencies: {}
+    Info_117:
+      Name: randoms/15
+      Dependencies: {}
+    Info_118:
+      Name: animals/3
+      Dependencies: {}

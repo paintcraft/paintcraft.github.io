@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>PaintCraft</title>
+<body class="">
+
+  <div class="wrap">
+    <div class="panel">      
+      <section>
+          <div class="docs">
+          <h1 id="how-it-works">How it works</h1>
+<div class="toc">
+<ul>
+<li><a href="#how-it-works">How it works</a><ul>
+<li><a href="#package-setup">Package setup</a><ul>
+<li><a href="#simply-svg">Simply SVG</a></li>
+<li><a href="#svg-importer">SVG Importer</a></li>
+</ul>
+</li>
+<li><a href="#prepare-svg-files">Prepare SVG files</a></li>
+<li><a href="#pageconfig-parameters">PageConfig Parameters</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>First of all you must have one of the following packages to make it works</p>
+<ul>
+<li><a href="https://www.assetstore.unity3d.com/en/#!/content/46496">Simply SVG</a></li>
+<li><a href="https://www.assetstore.unity3d.com/en/#!/content/38258">SVG Importer</a></li>
+</ul>
+<p>Both of these packages works the same. they generate the mesh from the svg file and paintcraft just render this mesh to the texture and then paint all unique regions - and use it as a page config.</p>
+<p>If you use Adobe AI result svg files contains <strong>viewBox</strong> parameter. this parameter used for the result page config width and height. Just in case you didn't know svg  is a plain xml file.</p>
+<p><img alt="svg viewbox node" src="/images/svg/view_box.png" /></p>
+<h2 id="package-setup">Package setup</h2>
+<p>As I mention above you must purchase one of the packages and import it to the project.  here is a small instruction</p>
+<h3 id="simply-svg">Simply SVG</h3>
+<ol>
+<li>Import Simply SVG package in to the project</li>
+<li>Import (double click at) <strong>PaintCraft/Pro/SVG/SimplySVG.unitypackage</strong> in to the project</li>
+<li>At the new folder <strong>PaintCraft/Pro/SVG/SimplySVG/PageConfigs</strong> you will find 3 demo pages which you can select at paintcraft controller as you did for standard</li>
+<li>Use context menu to create new page configs</li>
+</ol>
+<p><img alt="simply svg page config" src="/images/svg/simplysvg_menu.png" /></p>
+<h3 id="svg-importer">SVG Importer</h3>
+<ol>
+<li>Import SVGImporter int to the project.</li>
+<li>Import (double click at) <strong>PaintCraft/Pro/SVG/SVGImporter.unitypackage</strong> in to the project</li>
+<li>At the new folder <strong>PaintCraft/Pro/SVG/SVGImporter/PageConfigs</strong> you will find 3 demo pages</li>
+<li>Use context menu to create new page configs</li>
+</ol>
+<h2 id="prepare-svg-files">Prepare SVG files</h2>
+<p>Just rename <em>.svg</em> file to <em>.svg.txt</em> and you will be able to use it as standard unity asset. And just make sure that you have <em>viewBox</em> parameter as on the first screenshot of this document.</p>
+<h2 id="pageconfig-parameters">PageConfig Parameters</h2>
+<p>Any of the importer has the same parameters.</p>
+<ol>
+<li>UniqueId - unique page config across all page configs used in this project</li>
+<li>StartImagePath - If you wish to have default background image you can set this up.</li>
+<li>SVG Asset - link to the renamed .svg to .svg.txt file</li>
+<li>Cache Generated Textures - If you wish generated outline and region files could be cached on the device. so next time you will open the same page those texture will be used.</li>
+<li>SvgAntialiasing - this is how smoth your line will be. more info about antialiasing at <a href="https://docs.unity3d.com/460/Documentation/Manual/script-AntialiasingAsPostEffect.html">Unity Antialiasing Manual</a></li>
+<li>RegionMaxAlpha - after your outline layer generated region calculation routine started. It takes all closed regions with alpha <a href="by default">0:250</a> and fill it with unique color. this means if you have 2 neighbor pixels with alpha = 0 and alpha = 250 this pixels considers as the same region and will be painted to the same color.</li>
+<li>FilterMode - point result texture are rendered. Point - means no filter and this allow you to make perfect floodfills.</li>
+</ol>
+          </div>
+      </section>
+    </div>
+  </div>
+
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

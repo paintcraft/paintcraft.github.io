@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3334239620
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f43ce731ec2580d89b732e0d583cbbeb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 568df497a443155495243611d6f2c8a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/mandalas/1/mandala_1.asset
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3703023675
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8d686d0520dd42d3fcbf5b24118f14cd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 568df497a443155495243611d6f2c8a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/humans/13/human_13.asset
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 528215232
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ba9f058e7b1e1f5e8fcafca09a372c36
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97dc3b082fc22fff3d4e573766ded33b
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afff41642377842029916357151ecdc1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/transport/02/transport0002.asset
+Dependencies: []

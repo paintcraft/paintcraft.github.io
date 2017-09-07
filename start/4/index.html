@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Canvas Controls Button – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+class="active"      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Canvas Controls Button</h1>
+    <p>We need to use simple controls for our canvas like undo/redo or clear. It's  a quite simple. let's create them</p>
+<h2 id="clear-canvas-button">Clear Canvas Button</h2>
+<ol>
+<li>As usuall let's create button <code>GameObject/UI/Button</code> and put it to the right bottom control. To do that you can select RectTransform and change pivot and position at once. You need to click on the left top rect then hold down shift+alt click the bottom right corner<br />
+<img alt="set pivot and position" src="/images/quickstart/pivot_position.png" /></li>
+<li>Set small ofset. set <code>PosX=-10</code> <code>PosY=10</code> so it won't be right on the corner and change <code>width=120</code>. </li>
+<li>Name this button as <code>Clear</code></li>
+<li>now we need to ad event to this button.
+  Click <code>+</code> in <code>OnClick()</code> event<br />
+<img alt="button on click" src="/images/quickstart/on_click.png" /></li>
+<li>Click on the object field and select <code>Cavnas</code><br />
+<img alt="select canvas" src="/images/quickstart/select_canvas.png" /><br />
+  You can also drag and drop <code>PaintCraft/Canvas</code> scene object to this property</li>
+<li>Now you need to select the <code>Canvas.ClearCanvas()</code> function. To do that click on <code>No Function</code> button select <code>CanvasController</code> and <code>ClearCanvas</code> function<br />
+<img alt="clear canvas function" src="/images/quickstart/clear_canvas_function.png" /></li>
+</ol>
+<p>Thats it. start your scene, try to draw something and then clear canvas</p>
+<h2 id="undo/redo">Undo/Redo</h2>
+<p>Let's repeat button creation process for undo/redo</p>
+<ol>
+<li>Clone your Clear button 2 times.</li>
+<li>Setup (1) clonned button position. change caption, name and set following position: <code>PosX=-75</code> <code>PosY=50</code> <code>Width=55</code><br />
+<img alt="undo button transform" src="/images/quickstart/undo_transform.png" /></li>
+<li>Setup (2) clonned button position. change caption, name and set following position: <code>PosX=-10</code> <code>PosY=50</code> <code>Width=55</code>. You should get nicely alligned buttons at the right bottom corner, something like this:<br />
+<img alt="canvas system buttons" src="/images/quickstart/canvas_system_buttons.png" /></li>
+<li>Select <code>Undo</code> button and Remove <code>OnClick</code> handler using <code>minus</code> button</li>
+<li>Add <code>UndoActiveButtonController</code> to <code>UndoButton</code></li>
+<li>Select <code>Canvas</code> for this controller you will get this. Make sure that <code>OnClick()</code> is cleared properly<br />
+<img alt="canvas redo function" src="/images/quickstart/undo_controller.png" /></li>
+<li>Select <code>Redo</code> and repeat steps 4 to 6 but this time add <code>RedoActiveButtonController</code></li>
+</ol>
+<p>Your systems buttons are ready and you can start your scene and check that everything is works properly.
+You can even see that undo/redo is clickable only if you have something to undo or redo. By default history size is 10.</p>
+
+    <div class="toolbar">
+        <a href="/start/3/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+        <a href="/start/5/" class="button">
+          <i class="fa fa-arrow-right"></i>
+          Next: Line Color and Thickness
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

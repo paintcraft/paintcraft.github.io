@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2467641445
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 39c699f22787596987ac11081e86c4ae
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4d24bf54f46935ed9e6cf78ac481bb9d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/humans/9/human_9_icon.png
+- Assets/PageConfigs/humans/4/human_4_icon.png
+- Assets/PageConfigs/humans/1/human_1_icon.png
+- Assets/PageConfigs/humans/7/human_7_icon.png
+- Assets/PageConfigs/humans/5/human_5_icon.png
+- Assets/PageConfigs/humans/8/human_8_icon.png
+- Assets/PageConfigs/humans/2/human_2_icon.png
+- Assets/PageConfigs/humans/6/human_6_icon.png
+- Assets/PageConfigs/humans/3/human_3_icon.png
+Dependencies: []

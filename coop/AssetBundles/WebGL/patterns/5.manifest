@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 644405973
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3532d8b2e0d695ec89f36e8e8902a970
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 568df497a443155495243611d6f2c8a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/patterns/5/pattern_5.asset
+Dependencies: []

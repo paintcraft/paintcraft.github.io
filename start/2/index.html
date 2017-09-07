@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Canvas prefab – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+class="active"      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Canvas prefab</h1>
+    <h2 id="canvas">Canvas</h2>
+<p>To start your first Drawing app project, the easiest thing to do is to use the <code>Paintcraft</code> prefab which is located at <code>Assets/Paintcraft/Prefab</code> folder. </p>
+<p>Find this object in your project and drag it to the scene</p>
+<p><img alt="canvas prefab" src="/images/quickstart/canvas_prefab.png" /></p>
+<p>If you have a brand new scene you will get this structure</p>
+<p><img alt="canvas instance" src="/images/quickstart/canvas_instance.png" /></p>
+<p>This object already contains necessary configs, but it won't work immediatly because we need to tell our canvas where we want to draw.</p>
+<h2 id="page-config">Page Config</h2>
+<p>Let's create a new Page config. This object will keep configuration just the size our canvas will be.</p>
+<p>We'll create a new folder for this <code>Assets/Configs</code></p>
+<p>And then click right mouse button and select <code>Create/PaintCraft/BlankPageConfig</code> menu</p>
+<p><img alt="canvas instance" src="/images/quickstart/blank_page_menu.png" /></p>
+<p>And now let's provide several settings for this config. Select this config in the project window and adjust settings in the inspector </p>
+<pre><code>Unique Id       # (0) this settings must be unique across all pages inside your project
+Size            # (1) Actual size of your result image (like 1920x1080)
+</code></pre>
+<ol>
+<li>We use this id to store some settings like preview icon and other meta data</li>
+<li>It's not mandatory to have canvas the same size as the screen. so we can make it smaller or bigger as you wish.</li>
+</ol>
+<p>Here is what we can get</p>
+<p><img alt="blank page config" src="/images/quickstart/blank_page_config.png" /></p>
+<h2 id="apply-new-page-config">Apply new page config</h2>
+<p>Now you have a page config and you can use it with your canvas object</p>
+<ol>
+<li>
+<p>Select <code>Canvas</code> object in hierarchy<br />
+<img alt="canvas object" src="/images/quickstart/canvas_object.png" /></p>
+</li>
+<li>
+<p>Link your page config to the <code>Page Config</code> property<br />
+<img alt="canvas pageconfig property" src="/images/quickstart/canvas_pageconfig_prop.png" /></p>
+</li>
+<li>
+<p>You can also change default background color of your canvas in the same <code>Canvas Controller</code> component change <code>Default BG Color</code>. I'll use default <code>gray</code> color</p>
+</li>
+</ol>
+<p>Here you go. Now press play button and you will be able to draw on your screen</p>
+<p><img alt="paintcraft first play" src="/images/quickstart/first_play.png" /></p>
+
+    <div class="toolbar">
+        <a href="/start/1/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+        <a href="/start/3/" class="button">
+          <i class="fa fa-arrow-right"></i>
+          Next: Change Tools Button
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

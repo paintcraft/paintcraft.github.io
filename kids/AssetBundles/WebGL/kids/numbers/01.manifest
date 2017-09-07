@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 721602994
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7b4c5ac650925f6de4c3956091d70745
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97dc3b082fc22fff3d4e573766ded33b
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afff41642377842029916357151ecdc1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/numbers/01/numbers0001.asset
+Dependencies: []

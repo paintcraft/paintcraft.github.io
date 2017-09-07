@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1068057477
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6dbc047c03dc1b8b9e5406a71582534f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 568df497a443155495243611d6f2c8a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/plants/13/plant_13.asset
+Dependencies: []

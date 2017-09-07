@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 927082950
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6c3ab20e1e394b12180864d1828dcac9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/skazki/10/skazki0010.icon.png
+- Assets/PageConfigsNew/skazki/14/skazki0014.icon.png
+- Assets/PageConfigsNew/skazki/07/skazki0007.icon.png
+- Assets/PageConfigsNew/skazki/21/skazki0021.icon.png
+- Assets/PageConfigsNew/skazki/24/skazki0024.icon.png
+- Assets/PageConfigsNew/skazki/01/skazki0001.icon.png
+- Assets/PageConfigsNew/skazki/17/skazki0017.icon.png
+- Assets/PageConfigsNew/skazki/23/skazki0023.icon.png
+- Assets/PageConfigsNew/skazki/25/skazki0025.icon.png
+- Assets/PageConfigsNew/skazki/16/skazki0016.icon.png
+- Assets/PageConfigsNew/skazki/13/skazki0013.icon.png
+- Assets/PageConfigsNew/skazki/09/skazki0009.icon.png
+- Assets/PageConfigsNew/skazki/03/skazki0003.icon.png
+- Assets/PageConfigsNew/skazki/06/skazki0006.icon.png
+- Assets/PageConfigsNew/skazki/22/skazki0022.icon.png
+- Assets/PageConfigsNew/skazki/05/skazki0005.icon.png
+- Assets/PageConfigsNew/skazki/12/skazki0012.icon.png
+- Assets/PageConfigsNew/skazki/02/skazki0002.icon.png
+- Assets/PageConfigsNew/skazki/18/skazki0018.icon.png
+- Assets/PageConfigsNew/skazki/15/skazki0015.icon.png
+- Assets/PageConfigsNew/skazki/19/skazki0019.icon.png
+- Assets/PageConfigsNew/skazki/04/skazki0004.icon.png
+- Assets/PageConfigsNew/skazki/20/skazki0020.icon.png
+- Assets/PageConfigsNew/skazki/11/skazki0011.icon.png
+- Assets/PageConfigsNew/skazki/08/skazki0008.icon.png
+Dependencies: []

@@ -1,0 +1,562 @@
+ManifestFileVersion: 0
+CRC: 385286870
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: kids/skazki/icons
+      Dependencies: {}
+    Info_1:
+      Name: kids/winter/icons
+      Dependencies: {}
+    Info_2:
+      Name: kids/babyes/icons
+      Dependencies: {}
+    Info_3:
+      Name: kids/transport/icons
+      Dependencies: {}
+    Info_4:
+      Name: kids/animals/icons
+      Dependencies: {}
+    Info_5:
+      Name: kids/other/icons
+      Dependencies: {}
+    Info_6:
+      Name: kids/shapes/icons
+      Dependencies: {}
+    Info_7:
+      Name: kids/numbers/icons
+      Dependencies: {}
+    Info_8:
+      Name: kids/transport/15
+      Dependencies: {}
+    Info_9:
+      Name: kids/shapes/03
+      Dependencies: {}
+    Info_10:
+      Name: kids/numbers/11
+      Dependencies: {}
+    Info_11:
+      Name: kids/skazki/24
+      Dependencies: {}
+    Info_12:
+      Name: kids/animals/23
+      Dependencies: {}
+    Info_13:
+      Name: kids/other/02
+      Dependencies: {}
+    Info_14:
+      Name: kids/shapes/17
+      Dependencies: {}
+    Info_15:
+      Name: kids/transport/25
+      Dependencies: {}
+    Info_16:
+      Name: kids/animals/14
+      Dependencies: {}
+    Info_17:
+      Name: kids/shapes/11
+      Dependencies: {}
+    Info_18:
+      Name: kids/babyes/04
+      Dependencies: {}
+    Info_19:
+      Name: kids/skazki/19
+      Dependencies: {}
+    Info_20:
+      Name: kids/winter/12
+      Dependencies: {}
+    Info_21:
+      Name: kids/shapes/01
+      Dependencies: {}
+    Info_22:
+      Name: kids/skazki/07
+      Dependencies: {}
+    Info_23:
+      Name: kids/animals/22
+      Dependencies: {}
+    Info_24:
+      Name: kids/numbers/04
+      Dependencies: {}
+    Info_25:
+      Name: kids/transport/13
+      Dependencies: {}
+    Info_26:
+      Name: kids/babyes/34
+      Dependencies: {}
+    Info_27:
+      Name: kids/babyes/16
+      Dependencies: {}
+    Info_28:
+      Name: kids/animals/27
+      Dependencies: {}
+    Info_29:
+      Name: kids/numbers/09
+      Dependencies: {}
+    Info_30:
+      Name: kids/animals/01
+      Dependencies: {}
+    Info_31:
+      Name: kids/transport/23
+      Dependencies: {}
+    Info_32:
+      Name: kids/skazki/14
+      Dependencies: {}
+    Info_33:
+      Name: kids/babyes/01
+      Dependencies: {}
+    Info_34:
+      Name: kids/numbers/02
+      Dependencies: {}
+    Info_35:
+      Name: kids/animals/06
+      Dependencies: {}
+    Info_36:
+      Name: kids/babyes/18
+      Dependencies: {}
+    Info_37:
+      Name: kids/skazki/13
+      Dependencies: {}
+    Info_38:
+      Name: kids/other/07
+      Dependencies: {}
+    Info_39:
+      Name: kids/winter/09
+      Dependencies: {}
+    Info_40:
+      Name: kids/shapes/09
+      Dependencies: {}
+    Info_41:
+      Name: kids/shapes/23
+      Dependencies: {}
+    Info_42:
+      Name: kids/babyes/17
+      Dependencies: {}
+    Info_43:
+      Name: kids/babyes/24
+      Dependencies: {}
+    Info_44:
+      Name: kids/babyes/08
+      Dependencies: {}
+    Info_45:
+      Name: kids/skazki/22
+      Dependencies: {}
+    Info_46:
+      Name: kids/skazki/01
+      Dependencies: {}
+    Info_47:
+      Name: kids/numbers/08
+      Dependencies: {}
+    Info_48:
+      Name: kids/animals/11
+      Dependencies: {}
+    Info_49:
+      Name: kids/other/01
+      Dependencies: {}
+    Info_50:
+      Name: kids/transport/12
+      Dependencies: {}
+    Info_51:
+      Name: kids/shapes/02
+      Dependencies: {}
+    Info_52:
+      Name: kids/animals/17
+      Dependencies: {}
+    Info_53:
+      Name: kids/winter/06
+      Dependencies: {}
+    Info_54:
+      Name: kids/winter/01
+      Dependencies: {}
+    Info_55:
+      Name: kids/animals/08
+      Dependencies: {}
+    Info_56:
+      Name: kids/animals/29
+      Dependencies: {}
+    Info_57:
+      Name: kids/shapes/13
+      Dependencies: {}
+    Info_58:
+      Name: kids/babyes/31
+      Dependencies: {}
+    Info_59:
+      Name: kids/babyes/09
+      Dependencies: {}
+    Info_60:
+      Name: kids/babyes/27
+      Dependencies: {}
+    Info_61:
+      Name: kids/babyes/19
+      Dependencies: {}
+    Info_62:
+      Name: kids/transport/11
+      Dependencies: {}
+    Info_63:
+      Name: kids/winter/02
+      Dependencies: {}
+    Info_64:
+      Name: kids/babyes/02
+      Dependencies: {}
+    Info_65:
+      Name: kids/shapes/20
+      Dependencies: {}
+    Info_66:
+      Name: kids/shapes/21
+      Dependencies: {}
+    Info_67:
+      Name: kids/animals/20
+      Dependencies: {}
+    Info_68:
+      Name: kids/winter/07
+      Dependencies: {}
+    Info_69:
+      Name: kids/skazki/16
+      Dependencies: {}
+    Info_70:
+      Name: kids/transport/09
+      Dependencies: {}
+    Info_71:
+      Name: kids/skazki/15
+      Dependencies: {}
+    Info_72:
+      Name: kids/skazki/23
+      Dependencies: {}
+    Info_73:
+      Name: kids/animals/18
+      Dependencies: {}
+    Info_74:
+      Name: kids/other/04
+      Dependencies: {}
+    Info_75:
+      Name: kids/animals/09
+      Dependencies: {}
+    Info_76:
+      Name: kids/winter/11
+      Dependencies: {}
+    Info_77:
+      Name: kids/numbers/01
+      Dependencies: {}
+    Info_78:
+      Name: kids/numbers/03
+      Dependencies: {}
+    Info_79:
+      Name: kids/babyes/14
+      Dependencies: {}
+    Info_80:
+      Name: kids/transport/24
+      Dependencies: {}
+    Info_81:
+      Name: kids/animals/02
+      Dependencies: {}
+    Info_82:
+      Name: kids/babyes/10
+      Dependencies: {}
+    Info_83:
+      Name: kids/animals/05
+      Dependencies: {}
+    Info_84:
+      Name: kids/transport/22
+      Dependencies: {}
+    Info_85:
+      Name: kids/winter/10
+      Dependencies: {}
+    Info_86:
+      Name: kids/babyes/11
+      Dependencies: {}
+    Info_87:
+      Name: kids/skazki/02
+      Dependencies: {}
+    Info_88:
+      Name: kids/babyes/33
+      Dependencies: {}
+    Info_89:
+      Name: kids/transport/02
+      Dependencies: {}
+    Info_90:
+      Name: kids/babyes/32
+      Dependencies: {}
+    Info_91:
+      Name: kids/shapes/22
+      Dependencies: {}
+    Info_92:
+      Name: kids/shapes/05
+      Dependencies: {}
+    Info_93:
+      Name: kids/skazki/21
+      Dependencies: {}
+    Info_94:
+      Name: kids/other/08
+      Dependencies: {}
+    Info_95:
+      Name: kids/babyes/36
+      Dependencies: {}
+    Info_96:
+      Name: kids/shapes/08
+      Dependencies: {}
+    Info_97:
+      Name: kids/animals/25
+      Dependencies: {}
+    Info_98:
+      Name: kids/animals/26
+      Dependencies: {}
+    Info_99:
+      Name: kids/animals/21
+      Dependencies: {}
+    Info_100:
+      Name: kids/shapes/04
+      Dependencies: {}
+    Info_101:
+      Name: kids/animals/15
+      Dependencies: {}
+    Info_102:
+      Name: kids/shapes/14
+      Dependencies: {}
+    Info_103:
+      Name: kids/shapes/12
+      Dependencies: {}
+    Info_104:
+      Name: kids/skazki/03
+      Dependencies: {}
+    Info_105:
+      Name: kids/skazki/05
+      Dependencies: {}
+    Info_106:
+      Name: kids/babyes/20
+      Dependencies: {}
+    Info_107:
+      Name: kids/skazki/20
+      Dependencies: {}
+    Info_108:
+      Name: kids/other/03
+      Dependencies: {}
+    Info_109:
+      Name: kids/babyes/13
+      Dependencies: {}
+    Info_110:
+      Name: kids/other/05
+      Dependencies: {}
+    Info_111:
+      Name: kids/babyes/40
+      Dependencies: {}
+    Info_112:
+      Name: kids/skazki/12
+      Dependencies: {}
+    Info_113:
+      Name: kids/skazki/04
+      Dependencies: {}
+    Info_114:
+      Name: kids/transport/10
+      Dependencies: {}
+    Info_115:
+      Name: kids/other/06
+      Dependencies: {}
+    Info_116:
+      Name: kids/shapes/16
+      Dependencies: {}
+    Info_117:
+      Name: kids/babyes/05
+      Dependencies: {}
+    Info_118:
+      Name: kids/animals/13
+      Dependencies: {}
+    Info_119:
+      Name: kids/winter/05
+      Dependencies: {}
+    Info_120:
+      Name: kids/shapes/19
+      Dependencies: {}
+    Info_121:
+      Name: kids/winter/04
+      Dependencies: {}
+    Info_122:
+      Name: kids/transport/19
+      Dependencies: {}
+    Info_123:
+      Name: kids/skazki/17
+      Dependencies: {}
+    Info_124:
+      Name: kids/babyes/28
+      Dependencies: {}
+    Info_125:
+      Name: kids/skazki/10
+      Dependencies: {}
+    Info_126:
+      Name: kids/transport/08
+      Dependencies: {}
+    Info_127:
+      Name: kids/numbers/05
+      Dependencies: {}
+    Info_128:
+      Name: kids/shapes/10
+      Dependencies: {}
+    Info_129:
+      Name: kids/transport/16
+      Dependencies: {}
+    Info_130:
+      Name: kids/babyes/25
+      Dependencies: {}
+    Info_131:
+      Name: kids/shapes/07
+      Dependencies: {}
+    Info_132:
+      Name: kids/babyes/12
+      Dependencies: {}
+    Info_133:
+      Name: kids/transport/17
+      Dependencies: {}
+    Info_134:
+      Name: kids/shapes/24
+      Dependencies: {}
+    Info_135:
+      Name: kids/shapes/06
+      Dependencies: {}
+    Info_136:
+      Name: kids/animals/12
+      Dependencies: {}
+    Info_137:
+      Name: kids/babyes/35
+      Dependencies: {}
+    Info_138:
+      Name: kids/transport/06
+      Dependencies: {}
+    Info_139:
+      Name: kids/transport/18
+      Dependencies: {}
+    Info_140:
+      Name: kids/transport/07
+      Dependencies: {}
+    Info_141:
+      Name: kids/skazki/06
+      Dependencies: {}
+    Info_142:
+      Name: kids/winter/15
+      Dependencies: {}
+    Info_143:
+      Name: kids/numbers/07
+      Dependencies: {}
+    Info_144:
+      Name: kids/skazki/18
+      Dependencies: {}
+    Info_145:
+      Name: kids/babyes/07
+      Dependencies: {}
+    Info_146:
+      Name: kids/skazki/09
+      Dependencies: {}
+    Info_147:
+      Name: kids/animals/07
+      Dependencies: {}
+    Info_148:
+      Name: kids/babyes/22
+      Dependencies: {}
+    Info_149:
+      Name: kids/animals/24
+      Dependencies: {}
+    Info_150:
+      Name: kids/transport/04
+      Dependencies: {}
+    Info_151:
+      Name: kids/transport/01
+      Dependencies: {}
+    Info_152:
+      Name: kids/transport/20
+      Dependencies: {}
+    Info_153:
+      Name: kids/animals/10
+      Dependencies: {}
+    Info_154:
+      Name: kids/transport/03
+      Dependencies: {}
+    Info_155:
+      Name: kids/winter/08
+      Dependencies: {}
+    Info_156:
+      Name: kids/babyes/21
+      Dependencies: {}
+    Info_157:
+      Name: kids/skazki/08
+      Dependencies: {}
+    Info_158:
+      Name: kids/babyes/38
+      Dependencies: {}
+    Info_159:
+      Name: kids/shapes/25
+      Dependencies: {}
+    Info_160:
+      Name: kids/transport/21
+      Dependencies: {}
+    Info_161:
+      Name: kids/winter/13
+      Dependencies: {}
+    Info_162:
+      Name: kids/babyes/06
+      Dependencies: {}
+    Info_163:
+      Name: kids/transport/05
+      Dependencies: {}
+    Info_164:
+      Name: kids/shapes/18
+      Dependencies: {}
+    Info_165:
+      Name: kids/babyes/37
+      Dependencies: {}
+    Info_166:
+      Name: kids/animals/04
+      Dependencies: {}
+    Info_167:
+      Name: kids/babyes/26
+      Dependencies: {}
+    Info_168:
+      Name: kids/babyes/15
+      Dependencies: {}
+    Info_169:
+      Name: kids/skazki/25
+      Dependencies: {}
+    Info_170:
+      Name: kids/transport/14
+      Dependencies: {}
+    Info_171:
+      Name: kids/numbers/06
+      Dependencies: {}
+    Info_172:
+      Name: kids/skazki/11
+      Dependencies: {}
+    Info_173:
+      Name: kids/numbers/10
+      Dependencies: {}
+    Info_174:
+      Name: kids/babyes/30
+      Dependencies: {}
+    Info_175:
+      Name: kids/winter/03
+      Dependencies: {}
+    Info_176:
+      Name: kids/animals/19
+      Dependencies: {}
+    Info_177:
+      Name: kids/animals/16
+      Dependencies: {}
+    Info_178:
+      Name: kids/winter/14
+      Dependencies: {}
+    Info_179:
+      Name: kids/babyes/29
+      Dependencies: {}
+    Info_180:
+      Name: kids/shapes/15
+      Dependencies: {}
+    Info_181:
+      Name: kids/babyes/23
+      Dependencies: {}
+    Info_182:
+      Name: kids/animals/28
+      Dependencies: {}
+    Info_183:
+      Name: kids/babyes/39
+      Dependencies: {}
+    Info_184:
+      Name: kids/animals/03
+      Dependencies: {}
+    Info_185:
+      Name: kids/babyes/03
+      Dependencies: {}

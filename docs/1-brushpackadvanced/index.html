@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Advanced – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap">
+    <div class="panel">
+      <nav class="side">
+          <h3>BrushPack</h3>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="/docs/0-brushpackbasic/">Basic</a>
+            <li class="active">
+              <a href="/docs/1-brushpackadvanced/">Advanced</a>
+          </ul>
+          <h3>Pro</h3>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="/docs/10-pro3d/">3D Scene setup</a>
+            <li>
+              <a href="/docs/20-proSVG/">SVG support</a>
+          </ul>
+      </nav>
+      <section>
+          <div class="docs">
+          <h1 id="advanced-brush-pack">Advanced Brush pack</h1>
+<div class="toc">
+<ul>
+<li><a href="#advanced-brush-pack">Advanced Brush pack</a><ul>
+<li><a href="#brush-(commandbuffer)">Brush (commandbuffer)</a></li>
+<li><a href="#confetti">Confetti</a></li>
+<li><a href="#eraser">Eraser</a></li>
+<li><a href="#patternbrush">PatternBrush</a></li>
+<li><a href="#stamp-brush">Stamp Brush</a></li>
+<li><a href="#trail-brush">Trail Brush</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Main difference with basic brushes is that advanced tools use different renderer approach <a href="http://localhost:8080/raw/test/">CommandBuffer</a>.</p>
+<p>It has some cons and pros.</p>
+<p>Pros:</p>
+<ul>
+<li>It's possible to use different matterials at once. This means that your line can have several different materials (like a car and skidrows)</li>
+<li>You can use stamp and pattern drawing.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Command buffer doesn't have mesh pool so Garbage collector could run more often than if you will use basic brushes.
+You can see some freezes. But don't worry this doesn't lead to any app crashes. just some freezes (Garbage Collector need a time to clear unused memory, so at the frame when GC called your FPS goes down)</li>
+</ul>
+<p>You can see that every brush which use commandbuffer has SetMaterial filter. It's mandatory to setup material to the points in the line.</p>
+<p><img alt="Command buffer brush" src="/images/advanced_tools/commandbuffer_brush.png" /></p>
+<p>You can also see that all tools as well as basic tools supports regions drawing.</p>
+<h2 id="brush-(commandbuffer)">Brush (commandbuffer)</h2>
+<p>This is like a standard brush but use command buffer render approach</p>
+<p><img alt="Command buffer brush" src="/images/advanced_tools/brush_cb.png" /></p>
+<h2 id="confetti">Confetti</h2>
+<p>This is like a spray but use random circles with random colors</p>
+<p><img alt="Command buffer brush" src="/images/advanced_tools/confetti.png" /></p>
+<h2 id="eraser">Eraser</h2>
+<p>This tools support drawing on existing image. so it will erase not to the default color but to the background image</p>
+<p><img alt="Command buffer eraser" src="/images/advanced_tools/eraser.png" /></p>
+<h2 id="patternbrush">PatternBrush</h2>
+<p>This tools supported tiled texture and tint color</p>
+<p><img alt="Command buffer pattern brush" src="/images/advanced_tools/pattern_brush.png" /></p>
+<h2 id="stamp-brush">Stamp Brush</h2>
+<p>You can use any textures as a stamp. Stamp applied to the canvas only when line is finished. otherwise it's just temporary showed.</p>
+<p><img alt="Command buffer stamp brush" src="/images/advanced_tools/stamps.png" /></p>
+<h2 id="trail-brush">Trail Brush</h2>
+<p>This line contains of two different textures. one is a skidrow - which applied right to the canvas and the car which applied only at the last frame.</p>
+<p><img alt="Command buffer stamp brush" src="/images/advanced_tools/trail_brush.png" /></p>
+          </div>
+      </section>
+    </div>
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

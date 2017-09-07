@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2476448496
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 69f08eb2a3c08813de67888d151d7c86
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97dc3b082fc22fff3d4e573766ded33b
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afff41642377842029916357151ecdc1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/animals/25/animals0025.asset
+Dependencies: []

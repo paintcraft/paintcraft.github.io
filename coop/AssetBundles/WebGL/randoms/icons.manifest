@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 964940322
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 523f81fddc636812fd30ee9e488d8d32
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/randoms/12/random_12_icon.png
+- Assets/PageConfigs/randoms/10/random_10_icon.png
+- Assets/PageConfigs/randoms/1/random_1_icon.png
+- Assets/PageConfigs/randoms/7/random_7_icon.png
+- Assets/PageConfigs/randoms/4/random_4_icon.png
+- Assets/PageConfigs/randoms/15/random_15_icon.png
+- Assets/PageConfigs/randoms/9/random_9_icon.png
+- Assets/PageConfigs/randoms/3/random_3_icon.png
+- Assets/PageConfigs/randoms/14/random_14_icon.png
+- Assets/PageConfigs/randoms/2/random_2_icon.png
+- Assets/PageConfigs/randoms/5/random_5_icon.png
+- Assets/PageConfigs/randoms/6/random_6_icon.png
+- Assets/PageConfigs/randoms/11/random_11_icon.png
+- Assets/PageConfigs/randoms/13/random_13_icon.png
+- Assets/PageConfigs/randoms/8/random_8_icon.png
+Dependencies: []

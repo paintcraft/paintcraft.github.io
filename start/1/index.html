@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Package Structure – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+class="active"      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Package Structure</h1>
+    <p>here is a package structure</p>
+<pre><code>PaintCraft
+. /3DParty/
+. . /NodeInspector/         # (1) OpenSource graph editor used in brush configuration
+. /BrushPack/
+. . /Basic/                 # (2) Contains built-in tools (Ink, Cryon, etc)
+. /Demo/
+. . /ColoringBook/          # (3) Complete project (you can use it for reskining)
+. . /OnePlayerBasic/        # (4) Simple config for one player drawing
+. . /TwoPlayerOneCanvas/    # (5) Two players draw on the same canvas
+. . /TwoPlayerTwoCanvases/  # (6) Two players draw on own canvases simultaneously
+. /Engine/                  # (7) PaintCraft source code (normaly you don't need to go there)
+. /Prefabs/
+. . /Paintcraft.prefab      # (8) Minimal working drawing config.
+</code></pre>
+<ol>
+<li>Brush configuration is really flexible. You can controll your line almost at any point. And this plugin used to make it more user friendly. here is an example of one of the brush config  <br />
+<img alt="eraser setup" src="/images/quickstart/eraser_setup_example.png" /></li>
+<li>We included several brushes to this package so you can freely use them in your project. and for sure you can play with any parameters.</li>
+<li>This is a live project  with picture selection and 2 players split screen drawing. You can test it here in the <a href="/live/">browser</a> or on your mobile <a href="https://www.microsoft.com/en-us/store/apps/paintcraft/9nblggh5cxkl">Windows Store</a> <a href="https://play.google.com/store/apps/details?id=com.nicloay.paintcraft">Android</a></li>
+<li>Simple example. Minimal canvas configuration (you can do the same if you follow this instruction)</li>
+<li>Here 2 players draw simultaneously on the same canvas. Each player can use own brush and colors</li>
+<li>The same as above, but each player has own independent canvas.</li>
+<li>This is a source code of this package. if you are a programmer maybe it will be interesting to check the source code.</li>
+<li>This is a configured canvas prefab. you can drag it to your scene and you will get working drawing app with minimum configuration</li>
+</ol>
+
+    <div class="toolbar">
+        <a href="/start/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+        <a href="/start/2/" class="button">
+          <i class="fa fa-arrow-right"></i>
+          Next: Canvas prefab
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

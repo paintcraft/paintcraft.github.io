@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 890806572
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0cc715f6f40014b023bbbe68f607eb01
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 568df497a443155495243611d6f2c8a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/abstract/4/abstract_4.asset
+Dependencies: []

@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 1139254260
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4812779a5869dc1391a4ef0c6a78beeb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/shapes/20/shapes0020.icon.png
+- Assets/PageConfigsNew/shapes/07/shapes0007.icon.png
+- Assets/PageConfigsNew/shapes/16/shapes0016.icon.png
+- Assets/PageConfigsNew/shapes/19/shapes0019.icon.png
+- Assets/PageConfigsNew/shapes/11/shapes0011.icon.png
+- Assets/PageConfigsNew/shapes/15/shapes0015.icon.png
+- Assets/PageConfigsNew/shapes/04/shapes0004.icon.png
+- Assets/PageConfigsNew/shapes/23/shapes0023.icon.png
+- Assets/PageConfigsNew/shapes/03/shapes0003.icon.png
+- Assets/PageConfigsNew/shapes/22/shapes0022.icon.png
+- Assets/PageConfigsNew/shapes/06/shapes0006.icon.png
+- Assets/PageConfigsNew/shapes/25/shapes0025.icon.png
+- Assets/PageConfigsNew/shapes/05/shapes0005.icon.png
+- Assets/PageConfigsNew/shapes/08/shapes0008.icon.png
+- Assets/PageConfigsNew/shapes/18/shapes0018.icon.png
+- Assets/PageConfigsNew/shapes/02/shapes0002.icon.png
+- Assets/PageConfigsNew/shapes/13/shapes0013.icon.png
+- Assets/PageConfigsNew/shapes/17/shapes0017.icon.png
+- Assets/PageConfigsNew/shapes/12/shapes0012.icon.png
+- Assets/PageConfigsNew/shapes/10/shapes0010.icon.png
+- Assets/PageConfigsNew/shapes/24/shapes0024.icon.png
+- Assets/PageConfigsNew/shapes/14/shapes0014.icon.png
+- Assets/PageConfigsNew/shapes/01/shapes0001.icon.png
+- Assets/PageConfigsNew/shapes/21/shapes0021.icon.png
+- Assets/PageConfigsNew/shapes/09/shapes0009.icon.png
+Dependencies: []

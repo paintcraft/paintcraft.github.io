@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1006540212
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ccb200f34980ac47a06f62c7c6f2b67f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/mandalas/9/mandala_9_icon.png
+- Assets/PageConfigs/mandalas/12/mandala_12_icon.png
+- Assets/PageConfigs/mandalas/7/mandala_7_icon.png
+- Assets/PageConfigs/mandalas/4/mandala_4_icon.png
+- Assets/PageConfigs/mandalas/3/mandala_3_icon.png
+- Assets/PageConfigs/mandalas/11/mandala_11_icon.png
+- Assets/PageConfigs/mandalas/13/mandala_13_icon.png
+- Assets/PageConfigs/mandalas/1/mandala_1_icon.png
+- Assets/PageConfigs/mandalas/5/mandala_5_icon.png
+- Assets/PageConfigs/mandalas/10/mandala_10_icon.png
+- Assets/PageConfigs/mandalas/15/mandala_15_icon.png
+- Assets/PageConfigs/mandalas/14/mandala_14_icon.png
+- Assets/PageConfigs/mandalas/8/mandala_8_icon.png
+- Assets/PageConfigs/mandalas/2/mandala_2_icon.png
+- Assets/PageConfigs/mandalas/6/mandala_6_icon.png
+Dependencies: []

@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 2530060877
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 72e8fcc34da4020151349072fbd9f743
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/animals/14/animals0014.icon.png
+- Assets/PageConfigsNew/animals/29/animals0029.icon.png
+- Assets/PageConfigsNew/animals/13/animals0013.icon.png
+- Assets/PageConfigsNew/animals/23/animals0023.icon.png
+- Assets/PageConfigsNew/animals/25/animals0025.icon.png
+- Assets/PageConfigsNew/animals/03/animals0003.icon.png
+- Assets/PageConfigsNew/animals/18/animals0018.icon.png
+- Assets/PageConfigsNew/animals/12/animals0012.icon.png
+- Assets/PageConfigsNew/animals/01/animals0001.icon.png
+- Assets/PageConfigsNew/animals/28/animals0028.icon.png
+- Assets/PageConfigsNew/animals/22/animals0022.icon.png
+- Assets/PageConfigsNew/animals/11/animals0011.icon.png
+- Assets/PageConfigsNew/animals/24/animals0024.icon.png
+- Assets/PageConfigsNew/animals/27/animals0027.icon.png
+- Assets/PageConfigsNew/animals/19/animals0019.icon.png
+- Assets/PageConfigsNew/animals/02/animals0002.icon.png
+- Assets/PageConfigsNew/animals/17/animals0017.icon.png
+- Assets/PageConfigsNew/animals/06/animals0006.icon.png
+- Assets/PageConfigsNew/animals/09/animals0009.icon.png
+- Assets/PageConfigsNew/animals/26/animals0026.icon.png
+- Assets/PageConfigsNew/animals/21/animals0021.icon.png
+- Assets/PageConfigsNew/animals/05/animals0005.icon.png
+- Assets/PageConfigsNew/animals/15/animals0015.icon.png
+- Assets/PageConfigsNew/animals/07/animals0007.icon.png
+- Assets/PageConfigsNew/animals/04/animals0004.icon.png
+- Assets/PageConfigsNew/animals/16/animals0016.icon.png
+- Assets/PageConfigsNew/animals/20/animals0020.icon.png
+- Assets/PageConfigsNew/animals/10/animals0010.icon.png
+- Assets/PageConfigsNew/animals/08/animals0008.icon.png
+Dependencies: []

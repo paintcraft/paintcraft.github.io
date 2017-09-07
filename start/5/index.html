@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Line Color and Thickness – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+class="active"      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Line Color and Thickness</h1>
+    <h2 id="color">Color</h2>
+<p>Let's create several buttons which will shift our colors</p>
+<ol>
+<li>Select unity UI <code>Canvas</code> and create a new child<br />
+<img alt="empty child" src="/images/quickstart/empty_child.png" />  </li>
+<li>Let's place it at the middle of our screen<br />
+<img alt="middle bottom pivot" src="/images/quickstart/bottom_middle_pivot.png" /></li>
+<li>Name it <code>ColorsPalette</code> and set <code>PosY=10</code></li>
+<li>Add standard unity ui <code>HorizontalLayoutGroup</code> script on it set <code>spacing=10</code> and <code>childForceExpand=false</code></li>
+<li>on the same <code>ColorsPalette</code> object add <code>ContentSizeFitter</code> and set <code>horizontalFit=PreferredSize</code> so your object will looks as<br />
+<img alt="colors palette" src="/images/quickstart/colors_palette.png" /></li>
+</ol>
+<p>Now our root objects for our colors is ready and it would have nice feature. it would grow automatically and you can add several colors and all of them would be automactically aligned. so let's do that</p>
+<ol>
+<li>create <code>GameObject/UI/Button</code> and make it as child for our <code>ColorsPalette</code> element and name it 'ColorButton'<br />
+<img alt="color button" src="/images/quickstart/color_button.png" /></li>
+<li>remove text <code>Text</code> child object of our button. so you won't have any caption on it</li>
+<li>Add <code>LayoutElement</code> to our <code>ColorButton</code> and set "PrefferedWidth=30"<br />
+<img alt="layout element" src="/images/quickstart/layout_element.png" /></li>
+<li>Now you can clone our buttons as many times as you want to have in your final app. I'll make 5 colors. here is hierarchy and how it looks on scene<br />
+<img alt="color hierarchy" src="/images/quickstart/color_hierarchy.png" /><br />
+  and this is how it looks on the scene<br />
+<img alt="colors on scene" src="/images/quickstart/colors_on_scene.png" /> </li>
+<li>Now we need to change color of our button. Select <code>ColorButton</code> object <code>ImageComponent</code> and click on <code>Color</code> property and in dropdown list select required color<br />
+<img alt="button color" src="/images/quickstart/button_color.png" /> </li>
+<li>Final step would be add color change controller to do that you need to select all color buttons buttons in inspector<br />
+<img alt="all color buttons" src="/images/quickstart/all_colors.png" /><br />
+  then add <code>ChangeColorOnClickController</code>
+  And finaly copy our colors from our Image component to this controller. To Do that you need to select component menu (little gear at the top right corner of our component) and select <code>Copy Color from Image</code><br />
+<img alt="copy color from image" src="/images/quickstart/copy_color_from_image.png" /><br />
+  and then select <code>LineConfig</code> ad you did that in tool change step.<br />
+  Now check all your color buttons and make sure that all of them has link to <code>LineConfig</code> and every one has the same color as button.</li>
+</ol>
+<p>Click play button and try to change line of your color<br />
+<img alt="colored lines" src="/images/quickstart/colored_lines.png" /></p>
+
+    <div class="toolbar">
+        <a href="/start/4/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+        <a href="/start/6/" class="button">
+          <i class="fa fa-arrow-right"></i>
+          Next: Coloring Page
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

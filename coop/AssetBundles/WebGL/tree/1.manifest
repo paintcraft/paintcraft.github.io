@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2169817102
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a188d05a52d926e1a5eb3722c9762c0d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af08cec5efa05d419fa1b4bfca77cb2a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afaef1123e6de46d9a44e7f8dac3f92b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/Resources/tree1/Tree.asset
+Dependencies: []

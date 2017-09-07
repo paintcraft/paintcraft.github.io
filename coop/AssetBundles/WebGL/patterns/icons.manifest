@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 424110821
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6eb92df4dac92e9521313735dc506041
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/patterns/9/pattern_9_icon.png
+- Assets/PageConfigs/patterns/10/pattern_10_icon.png
+- Assets/PageConfigs/patterns/2/pattern_2_icon.png
+- Assets/PageConfigs/patterns/7/pattern_7_icon.png
+- Assets/PageConfigs/patterns/1/pattern_1_icon.png
+- Assets/PageConfigs/patterns/8/pattern_8_icon.png
+- Assets/PageConfigs/patterns/5/pattern_5_icon.png
+- Assets/PageConfigs/patterns/3/pattern_3_icon.png
+- Assets/PageConfigs/patterns/4/pattern_4_icon.png
+- Assets/PageConfigs/patterns/6/pattern_6_icon.png
+Dependencies: []

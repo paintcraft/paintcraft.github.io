@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 861802296
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b6a77f3049925af310b4e532a3b9648b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97dc3b082fc22fff3d4e573766ded33b
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: afff41642377842029916357151ecdc1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/shapes/05/shapes0005.asset
+Dependencies: []

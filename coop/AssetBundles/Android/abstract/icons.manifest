@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3797062784
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7513565f6b52a93b04c208028f3f2c1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigs/abstract/15/abstract_15_icon.png
+- Assets/PageConfigs/abstract/14/abstract_14_icon.png
+- Assets/PageConfigs/abstract/6/abstract_6_icon.png
+- Assets/PageConfigs/abstract/4/abstract_4_icon.png
+- Assets/PageConfigs/abstract/10/abstract_10_icon.png
+- Assets/PageConfigs/abstract/12/abstract_12_icon.png
+- Assets/PageConfigs/abstract/11/abstract_11_icon.png
+- Assets/PageConfigs/abstract/13/abstract_13_icon.png
+- Assets/PageConfigs/abstract/3/abstract_3_icon.png
+- Assets/PageConfigs/abstract/9/abstract_9_icon.png
+- Assets/PageConfigs/abstract/8/abstract_8_icon.png
+- Assets/PageConfigs/abstract/2/abstract_2_icon.png
+- Assets/PageConfigs/abstract/7/abstract_7_icon.png
+- Assets/PageConfigs/abstract/1/abstract_1_icon.png
+- Assets/PageConfigs/abstract/5/abstract_5_icon.png
+Dependencies: []

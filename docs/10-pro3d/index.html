@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>3D Scene setup – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap">
+    <div class="panel">
+      <nav class="side">
+          <h3>BrushPack</h3>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="/docs/0-brushpackbasic/">Basic</a>
+            <li>
+              <a href="/docs/1-brushpackadvanced/">Advanced</a>
+          </ul>
+          <h3>Pro</h3>
+          <ul class="nav nav-stacked">
+            <li class="active">
+              <a href="/docs/10-pro3d/">3D Scene setup</a>
+            <li>
+              <a href="/docs/20-proSVG/">SVG support</a>
+          </ul>
+      </nav>
+      <section>
+          <div class="docs">
+          <h1 id="how-it-works">How it works</h1>
+<div class="toc">
+<ul>
+<li><a href="#how-it-works">How it works</a><ul>
+<li><a href="#environment">Environment</a></li>
+<li><a href="#charactercontroller">CharacterController</a></li>
+<li><a href="#paintcraft-canvas-setup">Paintcraft Canvas setup</a></li>
+<li><a href="#add-drawing-to-the-scene">Add drawing to the scene</a><ul>
+<li><a href="#create-plane">Create Plane</a></li>
+<li><a href="#plane-controller">Plane Controller</a></li>
+</ul>
+</li>
+<li><a href="#fps-drawing-controller">FPS drawing Controller</a><ul>
+<li><a href="#drawing-3d-controller">Drawing 3D Controller</a></li>
+<li><a href="#switch-colors">Switch colors</a></li>
+</ul>
+</li>
+<li><a href="#final-part">Final part</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The idea is pretty simple. We put paintcraft canvas to the scene somewhere outside of the level so player won't see it.
+Then we take render texture used by paintcraft from back layer and just use it with plane anywhere in the scene.</p>
+<p>All related scripts and objects located at <strong>PaintCraft/Pro/3D</strong> folder</p>
+<p>Final part is to transfer drawing events to paintcraft. You can find the script below which use raycast from the center of the screen determine position and just forward this event to paintcraft.</p>
+<p>Let's create 3D scene step by step.</p>
+<h2 id="environment">Environment</h2>
+<p>I used 3d models from <a href="https://docs.unity3d.com/Manual/HOWTO-InstallStandardAssets.html">Prototyping</a> standard assets.
+So just drag and drop <strong>PaintCraft/Pro/3D/Prefabs/Environment</strong> prefab in to your scene to get a simple level with a house on your scene.
+<img alt="eraser setup" src="/images/3d/house.png" /></p>
+<h2 id="charactercontroller">CharacterController</h2>
+<p>Next let's add Character which will be able to run on our scene. You can find standard <a href="https://docs.unity3d.com/Manual/class-CharacterController.html">FPSController</a> at <strong>PaintCraft/Pro/3D/Standard Assets/Characters/FirstPersonCharacter/Prefabs</strong> folder</p>
+<p>Drag and drop <strong>FPSController</strong> to the scene somewhere inside our level.</p>
+<p>Now if you start the scene you should be able to run on the level using [WSAD] keys and mouse</p>
+<h2 id="paintcraft-canvas-setup">Paintcraft Canvas setup</h2>
+<p>Now we need to place PaintCraft canvas somewhere on the scene where player wont see it.
+I prefer position where x,y,z = 10000. Important rule: <strong>Don't change scale or rotation of this object</strong></p>
+<p>If you wish to add several canvases their positions must not overlap each other. Otherwise PaintCraft camera will see changes from one canvas on another.</p>
+<p>Drag and drop <strong>PaintCraft/Pro/3D/Prefabs/PaintcraftCanvas</strong> prefab to the scene two times.
+then change following parameters</p>
+<ul>
+<li>PaintcraftCanvas 1</li>
+<li>
+<ul>
+<li>position = (-10000, -10000, -10000)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>pageConfig = select anything what you like (e.g. Bear)</li>
+</ul>
+</li>
+<li>PaintcraftCanvas 2</li>
+<li>
+<ul>
+<li>position = (<strong>-20000</strong>, -10000, -10000) (See x position here is different from position used in previous canvas)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>pageConfig = select anything what you like (e.g. BlankPageConfig)</li>
+</ul>
+</li>
+</ul>
+<h2 id="add-drawing-to-the-scene">Add drawing to the scene</h2>
+<p>As I mention above. we just use render texture from paintcraft canvas. so what we need to do is just add standard <a href="https://docs.unity3d.com/Manual/PrimitiveObjects.html">Primitive</a> plane to the scene and assign material which use paintcraft render texture.</p>
+<h3 id="create-plane">Create Plane</h3>
+<p>Use Unity top menu -&gt; GameObject -&gt; 3D Objects -&gt; Plane</p>
+<p>you can see that plane is an object which located at the floor. so we need to rotate it properly to do that you can make following rotation (90,  90, -90)</p>
+<p><img alt="paintcraft 3d plane rotation" src="/images/3d/plane_rotation.png" /></p>
+<h3 id="plane-controller">Plane Controller</h3>
+<p>Add <strong>PaintCraft/Pro/3D/Scripts/PaintcraftCanvas3DPlane.cs</strong> to the plane object.
+Then selecte <em>PaintcraftCanvas</em> parameter. and choose Paintcraft Canvas.
+You see that it has <em>SyncAspect</em> options. if you enable this parameter, this script will change horizontal scale and make aspect (width/height) of this plane the same as your paintcraft page.</p>
+<p><img alt="paintcraft 3d plane" src="/images/3d/plane.png" /></p>
+<p>You also need to change <strong>material</strong> for this plane.
+if you use coloring book with outline layer you should choose <strong>PlaneMaterialWithOutlineLayer</strong>. otherwise just <strong>PlaneMaterial</strong>.</p>
+<p>Now start the scene and look at your plane. if you make everything right you should see the white plane with outline layer.</p>
+<p>info: You are free to change the shader which will work with lightning. in this demo just unlit shader is used.</p>
+<h2 id="fps-drawing-controller">FPS drawing Controller</h2>
+<p>To make it works we need</p>
+<ol>
+<li>Assign line config to the player. so player will use the same tool on any drawing canvas. Like select red color and draw a line on canvas1 then move to canvas2 and use the same red color</li>
+<li>Use raycast from the screen center to determine which canvas we are drawing right now.</li>
+</ol>
+<h3 id="drawing-3d-controller">Drawing 3D Controller</h3>
+<ol>
+<li>Add <strong>PaintCraft/Pro/3D/Scripts/Drawing3DController.cs</strong> component to the FPSController prefab instance</li>
+<li>This component has dependency to the line config so you will get LineConfig on this object automatically</li>
+<li>Select any Brush in the line config</li>
+<li>We don't need to set canvas as it will change dynamically (remember that we can draw on many canvases)</li>
+<li>Assign self camera. This camera is used as raycast source (for this prefab it's a <strong>FirstPersonCharacter</strong> object)</li>
+<li>You need to set unique line id. E.g. if you have several players on scene which draw lines on the same canvas each LineConfig must have unique id.</li>
+</ol>
+<p><img alt="drawing 3d controller" src="/images/3d/drawing_3d_controller.png" /></p>
+<h3 id="switch-colors">Switch colors</h3>
+<p>Here you can learn how to change another parameter (Color) in the player LineConfig
+1. Add <strong>PaintCraft/Pro/3D/Prefabs/UI Canvas</strong> to the scene. This prefabs contain UI element (color buttons and pointer).
+2.  Add <strong>SwitchColorByKeyboardButtons.cs</strong> script to the FPSController (this script locate at the same <strong>PaintCraft/Pro/3D/Scripts/</strong> folder)
+3. Set <strong>UI Pennel With Keys</strong> to the <strong>ColorPanelGroup</strong> so now you will see on the screen which color is active and which color is assigned to the number keys</p>
+<p>here is a final FPSController setup</p>
+<p><img alt="fps controller" src="/images/3d/fps_controller.png" /></p>
+<h2 id="final-part">Final part</h2>
+<p>That's it. if you play the scene you will be able to draw on the canvases. Now you can try to add more canvases and assign planes to them.</p>
+<p>You can assign one paintcraft canvas to several planes so if you will draw on one another will show the live changes. You can setup several canvases on the scene, but keep in mind that undo history is stored in memory, so if you are doing WebGL build you need to make undo smaller otherwise you will see the memory exhausted error.</p>
+<hr />
+<p>Feel free to open and modify any scripts from <strong>PaintCraft/Pro/3D/Scripts</strong> folder as they provided as refference. Probably if you want to make VR drawing your raycast source will be somewhere on the VR controller rather than camera. and color selection and brush change will be more complex in live project than in this example.</p>
+          </div>
+      </section>
+    </div>
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>

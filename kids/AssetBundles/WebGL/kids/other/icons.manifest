@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1214141197
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 688c4d8091ed284b436c69eb085318c8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4774d6da9b606debf00b5a5d61c4487c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/PageConfigsNew/other/03/other0003.icon.png
+- Assets/PageConfigsNew/other/05/other0005.icon.png
+- Assets/PageConfigsNew/other/01/other0001.icon.png
+- Assets/PageConfigsNew/other/04/other0004.icon.png
+- Assets/PageConfigsNew/other/06/other0006.icon.png
+- Assets/PageConfigsNew/other/02/other0002.icon.png
+- Assets/PageConfigsNew/other/08/other0008.icon.png
+- Assets/PageConfigsNew/other/07/other0007.icon.png
+Dependencies: []

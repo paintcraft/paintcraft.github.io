@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="shortcut icon" href="/images/icon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,400italic' rel='stylesheet'>
+
+<link rel="stylesheet" href="/live/TemplateData/style.css">
+<link rel="shortcut icon" href="/live/TemplateData/favicon.ico" />
+<script src="/live/TemplateData/UnityProgress.js"></script>
+
+<title>Change Tools Button – PaintCraft</title>
+<body class="">
+<header class="cf">
+  <div class="wrap">
+    <a href="/" class="growlogo">
+      <img src="/images/paintcraft.svg">
+      PaintCraft
+    </a>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/start/">Start</a>
+      <li><a href="/player/essential/">Live Demo</a>
+      <li><a href="/player/pro/">3D Demo</a>
+      <li><a href="/docs/0-brushpackbasic/">Docs</a>
+      <li><a href="/project/">About</a>
+    </nav>
+  </div>
+</header>
+  <div class="wrap main">
+    <ul class="codelab">
+      <li
+      ><a href="/start/" title="Start with the Paintcraft">0</a>
+      <li
+      ><a href="/start/1/" title="Package Structure">1</a>
+      <li
+      ><a href="/start/2/" title="Canvas prefab">2</a>
+      <li
+class="active"      ><a href="/start/3/" title="Change Tools Button">3</a>
+      <li
+      ><a href="/start/4/" title="Canvas Controls Button">4</a>
+      <li
+      ><a href="/start/5/" title="Line Color and Thickness">5</a>
+      <li
+      ><a href="/start/6/" title="Coloring Page">6</a>
+    </ul>
+
+    <h1>Change Tools Button</h1>
+    <p>Now we have a simple canvas. let's create some simple UI controls to change our tools.</p>
+<h2 id="ink-button">Ink Button</h2>
+<p>As you can see we have <code>Basic</code> brush pack in  the <code>Assets/PaintCraft/BrushPack</code> folder. And you can freely use them in your projects.</p>
+<p>Let's create standard unity buttons which will change some tools</p>
+<ol>
+<li>Create one UI button <code>GameObject/UI/Button</code> I'll put it to the left bottom corner and name it <code>Ink</code></li>
+<li>Add <code>ChangeBrushOnClickController</code> on to it<br />
+<img alt="change brush on click controller" src="/images/quickstart/change_brush_on_click_controller.png" /></li>
+<li>Now you need to set <code>LineConfig</code> refference to our prefab subcomponent on our scene <code>PaintCraft/Canvas/LineConfig</code>. Actually you can click right circle on the right side of this property and it will show you just one possible object, because we have only one right now   <br />
+<img alt="line  config refference" src="/images/quickstart/line_config_refference.png" /></li>
+<li>And final step is to set link to our tools. use the same circle and select <code>Ink</code> config from our basic pack. Don't forget to switch to <code>Assets</code> tab because this is a config stored in our project and not a scene object  <br />
+<img alt="select ink" src="/images/quickstart/select_ink.png" /></li>
+</ol>
+<p>Now you can start your scene and try to draw with the brush (because it's already selected in our line config as default tool) and after you click <code>Ink</code> button you will draw with ink<br />
+<img alt="brush and ink" src="/images/quickstart/brush_and_ink.png" /></p>
+<h2 id="spray-button">Spray Button</h2>
+<p>If you want to add more tools just clone InkButton object and change refference to the tool
+1. to clone object select <code>Ink Button</code> and then click <code>Edit/Duplicate</code> or just <code>ctrl+D</code> or <code>cmd+D</code> on mac
+2. Change position of this object. I'll change PosY in the rect transform so it will be alligned with my <code>Ink</code> button <br />
+<img alt="change y position" src="/images/quickstart/change_y_position.png" />
+3. Select the <code>Spray</code> object as you did it in previous fourth step
+4. And now rename your button and text value to your tool name <code>Spray</code></p>
+<p>And now let's change our default tool in our line config. Select <code>PaintCraft/Canvas/LineConfig</code> object. Click on <code>Brush</code> and select <code>Ink</code></p>
+<p>Now when you start your scene you will draw with <code>Ink</code> and you will be able to switch this tool to <code>Spray</code> and back.  <br />
+<img alt="ink and spray" src="/images/quickstart/ink_and_spray.png" /></p>
+
+    <div class="toolbar">
+        <a href="/start/2/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          Back
+        </a>
+        <a href="/start/4/" class="button">
+          <i class="fa fa-arrow-right"></i>
+          Next: Canvas Controls Button
+        </a>
+    </div>
+
+  </div>
+<footer>
+  <div class="flex wrap">
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36722336-8', 'auto');
+  ga('send', 'pageview');
+</script>
